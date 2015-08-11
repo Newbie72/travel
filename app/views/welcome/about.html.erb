@@ -1,11 +1,15 @@
+
+
 <h1>About Me</h1>
 <p>Lots of interesting stuff</p>
-<p>My favorite color is <%= @color, @size %></p>
+<p>My favorite color is <%= @color %></p>
 <p>My size is <%= @size %></p>
 
 <% if @size > 12 %>
-	<p>My shoe size is <%= @size %> I have Huge feet.</p>
-	<%
+  <p>My shoe size is <%= @size %>. I have HUGE feet.</p>
+<% else %>
+  <p>My shoe size is <%= @size %></p>
+<% end %>
 
 
 
